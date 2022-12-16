@@ -56,6 +56,5 @@ if(UlInnav){
         
 }
 
-const TopBtn = () => window.scrollTo({ top: 0,	behavior: "smooth" });
 
 
