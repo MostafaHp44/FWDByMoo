@@ -1,20 +1,41 @@
 const UlInnav =document.getElementById('NavBarItem')
 const sections = document.getElementsByTagName('section');
+const totop= document.getElementById('top')
+let topbtn = document.getElementById("myBtn");
 let number=1
-const sectionsOffsetTopVAL = [];
+const back = [];
 
 
 const CreateNav = () => {
-    for (let section of sections) {
-        let li = section.attributes['data-nav'].nodeValue;
+    for (let sec of sections) {
+        let li = sec.attributes['data-nav'].nodeValue;
         console.dir(li)
         UlInnav.innerHTML += `<li><a href="" class="nav_item${number++}">${li}</a></li>`;
-        sectionsOffsetTopVAL.push(section.offsetTop);
+        back.push(sec.offsetTop);
     }
     // set our first li item active
 }
 
 CreateNav();
+
+window.onscroll = ()=> {scrollFUN()};
+
+const scrollFUN=()=> {
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900 )
+   {
+    topbtn.style.display = "block";
+  }
+   else
+    {
+    topbtn.style.display = "none";
+  }
+}
+
+// When I'M click on the button 
+const ToTOP=()=> {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
+}
 
 
 if(UlInnav){
@@ -35,5 +56,6 @@ if(UlInnav){
         
 }
 
+const TopBtn = () => window.scrollTo({ top: 0,	behavior: "smooth" });
 
 
