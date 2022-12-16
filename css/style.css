@@ -1,6 +1,7 @@
 *
 {
-  
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 
 }
@@ -41,7 +42,6 @@ body
     left: 70rem;
     top: 20px;
     padding: 10px;
-    border-bottom:1px black solid
 }
 
 .nav_item2
@@ -216,6 +216,11 @@ p
         top: 20px;
         padding: 10px;
     }
+    .EndOfPage {
+        background-color: #fff;
+        height: 5em;
+        width: 70rem;
+    }
     /* #TextLanding {
         margin: 8em;
         text-align: center;
@@ -266,3 +271,25 @@ p
         height: 20em;
     } */
 }
+#myBtn 
+{
+display: none;
+    color: white; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #2d7dc3; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 15px; 
+    font-size: 18px; 
+    font-family:'Fira Sans', sans-serif;
+  }
+  
+  #myBtn:hover 
+  {
+    background-color:#2d7dc3; 
+  }
