@@ -1,14 +1,14 @@
-This project is based on the three sections when pressed
-
+# About me 
 My Name Is Mostafa Amine .This project was created in two days
 
-Some tools have been used (HTML-CSS-JS) 
-I Use js(Java Script) to create this page and the function played main role 
-in navbar and scroll to top about button  we use js to create it 
+# some tools 
+i used this font from google and its= 'https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap'
 
-color and imges used about css
+# about page
+this page hadn't any role it's for show example .this page was created and i used (CSS-JS-HTML)
+This Pages Contain A Some Function like SCrool to top in this page 
 
-we use a specail font in main body
+this page Contain 4 section every section contain a statements and random text 
 
 
 
