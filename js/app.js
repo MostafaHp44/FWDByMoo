@@ -56,7 +56,6 @@ if(UlInnav){
                         window.scrollTo({
                             top: section.offsetTop,
                             left: section.offsetLeft,
-                            behavior: 'smooth'
                         })
                     }
                 }
