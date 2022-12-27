@@ -10,7 +10,6 @@ body
 {
     background-color: aliceblue;
     height:68px;
-    scroll-behavior: smooth;
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -207,7 +206,7 @@ p
     .HeaderNav 
     {
         width: 12rem;
-        height: 120vh;
+        height: 583rem;
         transition: ease 0.3s;
         position: fixed;
         top: 12em;
