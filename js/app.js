@@ -15,10 +15,10 @@ const CreateNav = () => {
     for (let sec of sections) {
         let li = sec.attributes['data-nav'].nodeValue;
         console.dir(li)
-        UlInnav.innerHTML += `<li><a href="" class="nav_item${number++}">${li}</a></li>`;
+        UlInnav.innerHTML += `<li><a href="">${li}</a></li>`;
         back.push(sec.offsetTop);
     }
-    // set our first li item active
+    UlInnav.childNodes[0].classList.add(`nav_item_active`);
 }
 
 CreateNav();
@@ -37,10 +37,8 @@ const scrollFUN=()=> {
 }
 
 // When I'M click on the button 
-const ToTOP=()=> {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0; 
-}
+const ToTOP=() => window.scrollTo({ top: 0,	behavior: "smooth" });
+
 
 
 if(UlInnav){
@@ -82,10 +80,10 @@ window.addEventListener('scroll', (event) => {
                 section.classList.remove("your-active-class")
             }
             for (let li of ul_nav) {
-                li.classList.remove("active-nav")
+                li.classList.remove(`nav_item_active`)
             }
             activeSection.classList.add("your-active-class") 
-            ul_nav[activesec_i].classList.add("active-nav")
+            ul_nav[activesec_i].classList.add(`nav_item_active`)
         }
     }
 })
