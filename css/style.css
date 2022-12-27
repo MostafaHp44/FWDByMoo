@@ -21,43 +21,29 @@ body
 }
 #NavBarItem
 {
-    display: flex;
-    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
    
 }
-.nav_item1
+.BigNav li
 {
-    position: absolute;
-    left: 70rem;
-    top: 20px;
-    padding: 10px;
+ display: inline-block;  
 }
 
-.nav_item2
+.nav_item_active 
 {
-    position: absolute;
-    left: 76rem;
-    top: 20px;
-    padding: 10px;
+    border-bottom: 2px solid black;
+    transition: ease 0.1s;
 }
-.nav_item3
-{
-    position: absolute;
-    left: 82rem;
-    top: 20px;
-    padding: 10px;
-}
-.nav_item4
-{
-    position: absolute;
-    left: 88rem;
-    top: 20px;
-    padding: 10px;
-}
+
 a
 {
-    color: black;
+    display: block;
+    padding: 1em;
+    font-weight: bold;
     text-decoration: none;
+    color: #000;
 }
 #NavBarItem :hover
 {
@@ -183,28 +169,7 @@ p
 @media only screen and (max-width: 1300px)
 {
 
-    .nav_item1 {
-        position: absolute;
-        left: 31rem;
-        top: 20px;
-        padding: 10px;
-    }
-    .nav_item2 {
-        position: absolute;
-        left: 36rem;
-        top: 20px;
-        padding: 10px;
-    }.nav_item3 {
-        position: absolute;
-        left: 41rem;
-        top: 20px;
-        padding: 10px;
-    }.nav_item4 {
-        position: absolute;
-        left: 46rem;
-        top: 20px;
-        padding: 10px;
-    }
+    
     .EndOfPage {
         background-color: #fff;
         height: 5em;
