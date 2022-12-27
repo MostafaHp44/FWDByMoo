@@ -207,7 +207,7 @@ p
     .HeaderNav 
     {
         width: 12rem;
-        height: 583rem;
+        height: 120vh;
         transition: ease 0.3s;
         position: fixed;
         top: 12em;
