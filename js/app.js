@@ -1,9 +1,14 @@
-const UlInnav =document.getElementById('NavBarItem')
+const UlInnav  = document.getElementById('NavBarItem')
+const ul_nav   = document.getElementById('NavBarItem').childNodes
 const sections = document.getElementsByTagName('section');
-const totop= document.getElementById('top')
-let topbtn = document.getElementById("myBtn");
+const totop    = document.getElementById('top')
+let topbtn     = document.getElementById("myBtn");
 let number=1
 const back = [];
+let activeSection;
+let activesec_i;
+
+
 
 
 const CreateNav = () => {
@@ -56,5 +61,33 @@ if(UlInnav){
         
 }
 
+window.addEventListener('scroll', (event) => {
+
+    if (back && window.pageYOffset >= back[0]) 
+    {
+        back.map((value, index) => {
+            if (value <= window.pageYOffset + 150) {
+                activeSection = sections[index];
+                activesec_i = index;
+            }
+        })
+
+        if (activeSection.classList.contains("your-active-class")) 
+        {
+            return
+        }
+         else 
+         {
+            for (let section of sections) {
+                section.classList.remove("your-active-class")
+            }
+            for (let li of ul_nav) {
+                li.classList.remove("active-nav")
+            }
+            activeSection.classList.add("your-active-class") 
+            ul_nav[activesec_i].classList.add("active-nav")
+        }
+    }
+})
 
 
