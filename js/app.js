@@ -7,8 +7,14 @@ let number=1
 const back = [];
 let activeSection;
 let activesec_i;
+const smallmenu = document.querySelector('.convertm');
+const head = document.querySelector('.HeaderNav');
 
 
+
+smallmenu.addEventListener('click', (e) => {
+    head.classList.toggle("open");
+})
 
 
 const CreateNav = () => {
