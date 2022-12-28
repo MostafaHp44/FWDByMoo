@@ -205,20 +205,20 @@ p
     }
     .HeaderNav 
     {
-        width: 12rem;
-        height: 583rem;
+        width: 88rem;
+        height: 232vh;
         transition: ease 0.3s;
         position: fixed;
         top: 12em;
     }
     a 
     {
-        display: block;
-        padding: 3em;
-        font-weight: bold;
-        font-size: 20px;
-        text-decoration: none;
-        color: #000;
+    display: block;
+    padding: 3em;
+    font-weight: bold;
+    font-size: 6em;
+    text-decoration: none;
+    color: #000;
     }
     .BigNav ul
      {
@@ -236,10 +236,11 @@ p
         font-size: 30px;
         position: fixed;
         top: 2em;
-        left: 2em;
-        width: 40px;
+        left: 12em;
+        width: 38em;
+        height: 3em;
         background-color: #fff;
-        border-radius: 50%;
+        border-radius: 46px;
         text-align: center;
         cursor: pointer;
         color: #000;
